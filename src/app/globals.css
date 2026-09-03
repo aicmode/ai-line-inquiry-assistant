@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-surface: #ffffff;
+  --color-canvas: #f6f8fa;
+  --font-sans:
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo",
+    "Noto Sans JP", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+html {
+  /* 業種を問わず店舗スタッフが使う想定のため、表示は常にライトテーマで統一する */
+  color-scheme: light;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: #0f172a;
+  font-family: var(--font-sans);
+}
